@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <a href="https://www.a-tracker.com" class="logo">A-<span>Tracker</span></a>
+            
+            <nav>
+                <img class="close" src="images/close.svg" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Grey_close_x.svg">
+                <ul class="bullet">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Partner</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </nav>
+
+            <img class="menu" src="https://img.icons8.com/ios-glyphs/60/000000/menu--v1.png"/>
+
+        </header>
+
+        <section class="hero">
+            <h1 class="headPart">A partner with purpose</h1>
+
+            <img class='challenge' src="images/ATrackerCh.jpg" alt="">
+        </section>
+
+        
+
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">A-Tracker</p>
+                    <p class="desc">
+                        <ul>
+                            <li>Brand new car can come with the tracker installed.</li>
+                            <li>Tracking has value added system, including towing.</li>
+                            <li>BE Level 1 company.</li>
+                            <li>Provide certificate after installation.</li>
+                            <li>Your funded value if vehicle  is not found/recovered.</li>
+                        </ul>
+                    </p>
+                </div>
+                <img src="images/tracker.jpg" alt="A Tracker">
+            </div>
+
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Beame</p>
+                    <p class="desc">
+                        <ul>
+                            <li>Jamming Detect.</li>
+                            <li>Smart Wireless Technology.</li>
+                            <li>Easy to Hide.</li>
+                            <li>Lifetime Warranty.</li>
+                            <li>Multi vehicle Type.</li>
+                            <li>And more...</li>
+                        </ul>
+                    </p>
+                </div>
+                <img src="images/beame.jpg" alt="Beame Tracker">
+            </div>
+
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Matrix</p>
+                    <p class="desc">
+                        <ul>
+                            <li>Smart App.</li>
+                            <li>Online Tracjing Platform.</li>
+                            <li>Panic Button Remote.</li>
+                            <li>Geoloc Advanced Alert.</li>
+                            <li>Roadside Assist.</li>
+                            <li>No-Go Zone.</li>
+                            <li>And more...</li>
+                        </ul>
+                    </p>
+                </div>
+                <img src="images/matrix.jpg" alt="Matrix Tracker">
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="list">
+                    <h1 class="headc">Contact</h1>
+
+                    <form action="">
+                        <label for="">Name</label>
+                        <input type="text" id="name" name="name">
+                        
+                        <label for="">email address</label>
+                        <input type="text" id="" name="name" placeholder="gmailaddress@gmail.com">
+
+                        <label for="">Message</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        
+                        <input type="submit" class="send-message-cta" value="Send message">
+                    </form>
+                </div>
+                <div class="content-right">
+                    <p class="physical-add">
+                        <ul>
+                            <li>96 On Fourth Street</li>
+                            <li>Parkmore</li>
+                            <li>Santon 2196</li>
+                        </ul>
+                    </p>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.937427759867!2d28.036717314728914!3d-26.100961166122186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573463106adb9%3A0x16d1c05d1e4b6bed!2s96%20On%20Fourth!5e0!3m2!1sen!2sza!4v1646484033526!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-links">
+            <div class="link-left">
+                <a class="links" href="https://web.whatsapp.com"><img class="link" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"></a>
+                <a class="links" href="https://www.facebook.com/Maisha-Financial-Services-100718339050580"><img class="link" src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg"></a>
+                
+                <div class="link-right">
+                    <a class="links" href="https://www.instagram.com/a_trackerafrica/"><img class="link" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"></a>
+                    <a class="links" href="https://www.gmail.com"><img class="link" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Logo_Gmail_%282015-2020%29.svg"></a>
+                </div>               
+                
+            </div>
+        </section>
+    </div>
+    
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        }) 
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        }) 
+    </script>
+
+</body>
+</html>
